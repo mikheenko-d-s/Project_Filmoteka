@@ -1,0 +1,25 @@
+
+  <li class='main-content-list__item animation' data-action='{{id}}'>
+    <div class="card-container js-card-container"></div>
+    <img
+      class='card-img'
+      src='https://image.tmdb.org/t/p/w500{{poster_path}}'
+      alt='{{title}}'
+      data-id='{{id}}'
+      height='398'
+    />
+    <div class='card-info'>
+      <h2 class='card-title'>{{title}}</h2>
+
+      <p class='card-text'>
+        
+        {{#each genres}}<span class="genres">{{this.name}}</span>{{/each}}
+
+
+        <span>{{release_date}}</span>
+        <span class='vote-average'>{{vote_average}}</span>
+      </p>
+    </div>
+
+  </li>
+

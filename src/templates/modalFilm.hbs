@@ -1,0 +1,54 @@
+<div class='modal-poster-block' data-action="{{id}}">
+  <div class="startTrailer" data-play="trailer"></div>
+  <img src='https://image.tmdb.org/t/p/w500{{poster_path}}' alt='{{title}}' class='modal-poster' />
+</div>
+
+<div class='flex-container'>
+  <div class='modal-info'>
+    <h2 class='modal-title'>{{title}}</h2>
+
+    <ul class='modal-infotable'>
+      <li class='item'>
+        <p>Vote / Votes</p>
+        <span class='vote'>{{vote_average}}</span>
+        /
+        <span class='votes'>{{vote_count}}</span>
+      </li>
+      <li class='item'>
+        <p>Popularity</p>
+        <span class='popularity'>{{popularity}}</span>
+      </li>
+      <li class='item'>
+        <p>Original Title</p>
+        <span class='original-title'>{{original_title}}</span>
+      </li>
+      <li class='item'>
+        <p>Genre</p>
+
+        <ul class='genres-list'>
+          {{#each genres}}
+            <li class='genre'>{{this.name}}</li>
+          {{/each}}
+        </ul>
+
+      </li>
+    </ul>
+
+    <h3 class='about-title'>About</h3>
+    <p class='about-text'>{{overview}}</p>
+  </div>
+
+  <ul class='modal-button-list'>
+    <li class='modal-btn-item'>
+      <button class='modal-btn js-watched' type='button' data-modal="watched"  data-action="{{id}}">
+        add to Watched
+      </button>
+    </li>
+    <li class='modal-btn-item'>
+      <button class='modal-btn js-queue' type='button' data-modal="queue"  data-action="{{id}}">
+        add to queue
+      </button>
+    </li>
+  </ul>
+  
+</div>

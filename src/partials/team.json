@@ -1,0 +1,68 @@
+ [
+    {"member": "Anatolii Mostovyi - Team lead",
+    "name": "Anatolii Mostovyi",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/tolik.jpeg?raw=true",
+    "git": "https://github.com/Anatoliy-Mostovoy", 
+    "substance": "The ideal leader"
+    },
+    {"member": "Ivan Tryhuba - Scrum master",
+    "name": "Ivan Tryhuba",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/IvanTryhuba.jpg?raw=true",
+    "git": "https://github.com/ivantryhuba",
+    "substance": "the Esthete"
+    },
+    {"member": "Ivan Laver - Developer",
+    "name": "Ivan Laver",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/Ivan-Laver.jpg?raw=true",
+    "git": "https://github.com/Ereyzer",
+    "substance": "Picasso in JS"
+    },
+    {"member": "Tetiana Yarova - Developer",
+    "name": "Tetiana Yarova",
+    "photo": "https://raw.githubusercontent.com/Anatoliy-Mostovoy/Filmoteka2021/main/src/images/team/tanya.jpg",
+    "git": "https://github.com/YarovaT",
+    "substance": "Performer of complex tasks"
+    },
+    {"member": "Nikita Illin - Developer",
+    "name": "Mikita Illin",
+    "photo": "https://raw.githubusercontent.com/Anatoliy-Mostovoy/Filmoteka2021/main/src/images/team/nikita.jpg?raw=true",
+    "git": "https://github.com/nkpn",
+    "substance": "Team optimist"
+    },
+    {"member": "Oksana Plyas - Developer",
+    "name": "Oksana Plyas",
+    "photo": "https://raw.githubusercontent.com/Anatoliy-Mostovoy/Filmoteka2021/main/src/images/team/plyas.jpg?raw=true",
+    "git": "https://github.com/playsoksana",
+    "substance": "Almost optimist"
+    },
+    {"member": "Yulia Shcherban - Developer",
+    "name": "Yulia Shcherban",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/Julia.jpg?raw=true",
+    "git": "https://github.com/Yulia82",
+    "substance": "The person who can do everything"
+    },
+    {"member": "Olga Baturina - Developer",
+    "name": "Olga Baturina",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/olga_baturina.jpg?raw=true",
+    "git": "https://github.com/OlhaBaturina",
+    "substance": "Cats => {return code}"
+    },
+    {"member": "Andriy Belinskii - Developer",
+    "name": "Andrey Belinsky",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/Andriy-Belinskii.jpg?raw=true",
+    "git": "https://github.com/andriko21",
+    "substance": "Always positive"
+    },
+    {"member": "Dmitry Mikheenko - Developer",
+    "name": "Dmitry Mikheenko",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/dima.jpg?raw=true",
+    "git": "https://github.com/mikheenko-d-s",
+    "substance": "Soccer lover"
+    },
+    {"member": "Karina Skrypka - Developer",
+    "name": "Karina Skrypka",
+    "photo": "https://github.com/Anatoliy-Mostovoy/Filmoteka2021/blob/main/src/images/team/karina.jpg?raw=true",
+    "git": "https://github.com/KarinaSkrypka",
+    "substance": "The busy"
+    }
+]

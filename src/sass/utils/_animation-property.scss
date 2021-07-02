@@ -1,0 +1,18 @@
+// Длительность CSS-перехода
+$time-duration: 250ms;
+
+// Кубик Безье
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// анимация рендеринга карточек фильмов
+.animation {
+  animation: myAnime 2s both;
+}
+@keyframes myAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

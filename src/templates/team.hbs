@@ -1,0 +1,16 @@
+  {{#each this}}   
+ <li class="item-team default">   
+        <p class="team-name">{{member}}</p>
+        <div class="image-box">
+            <div class="border"></div>
+            <img class="photo" src="{{photo}}" alt="{{name}}">
+            <div class="image-content">
+                <h3 class="image-header">{{name}}</h3>
+                <p>{{substance}}</p>
+                <a class="link-git" href="{{git}}" alt="link to profile on github.com">
+                   <img class="icon-git" src="https://raw.githubusercontent.com/Anatoliy-Mostovoy/Filmoteka2021/b44582aee24279f0de876c3b30ad15edb2ad9fac/src/images/team/free-icon-github-2111612.svg" alt="{{name}}">
+                     </a> 
+            </div>
+        </div>  
+</li>
+   {{/each}}

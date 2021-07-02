@@ -1,0 +1,243 @@
+.backdrop-team {
+  padding: 10px 20px;
+  color: $mark-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 120px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 30px 320px;
+  }
+}
+
+.section-team {
+  position: relative;
+
+  top: 30px;
+  left: 50%;
+
+  @extend %flex-center;
+  flex-direction: column;
+  align-content: center;
+  min-height: 50vh;
+  transform: translateX(-50%);
+  @include transition(all);
+  opacity: 1;
+
+  @media screen and (min-width: 450px) {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 50vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 40vw;
+  }
+}
+
+.section-team div,
+.section-team li {
+  cursor: pointer;
+  border-radius: 3px;
+  background: rgba(220, 220, 220, 0.5);
+  @include transition(all);
+  font-family: $main-font;
+  font-weight: $main-weight;
+  font-size: $footer-size;
+}
+
+.section-team .default {
+  height: 38px;
+  width: 90vw;
+  padding: 5px 10px;
+  overflow: hidden;
+  text-align: center;
+  border-top: 2px solid $mark-color;
+  border-bottom: 2px solid $mark-color;
+  margin-bottom: 2px;
+  opacity: 1;
+  background-color: #353535;
+
+  @media screen and (min-width: 450px) {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 50vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 40vw;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 5px 1px #ff6b08;
+  }
+}
+
+.expand.default .default {
+  border: 2px solid #353535;
+}
+
+.section-team .expand {
+  position: absolute;
+  opacity: 1;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+  height: 450px;
+  width: 300px;
+  padding: 20px;
+
+  background: #353535;
+  
+}
+
+.backdrop-team {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+}
+
+.link-git {
+  display: block;
+  height: 80px;
+  width: 80px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-git {
+  height: 60px;
+  width: 60px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+}
+
+.image-box {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.default.expand > .image-box {
+  top: 10px;
+}
+
+.image-box .border {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+.image-box img {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-box .image-content {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  bottom: -1px;
+  left: 120%;
+  padding: 70px 10px;
+
+  background: linear-gradient(to bottom, rgba(18, 26, 63, 0.3), rgba(18, 26, 63, 0.9));
+}
+
+.image-content p {
+  margin-bottom: 30px;
+}
+
+.image-box:focus .image-content,
+.image-box:hover .image-content {
+  left: 30%;
+}
+
+.image-box .image-header {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  color: $header-text-color;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+
+  font-family: $main-font;
+  font-weight: $second-weight;
+  font-size: 30px;
+}
+
+.image-box p {
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-size: $second-size;
+  line-height: 2.2;
+}
+
+.expand .photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-name {
+  display: inline-flex;
+  font-size: $second-size;
+
+  pointer-events: none;
+  color: $mark-color;
+}
+
+.default.expand .team-name {
+  display: none;
+}
+
+.team-close {
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: $mark-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 20vw;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: $mark-color;
+  }
+}
+

@@ -1,0 +1,198 @@
+body {
+  background-color: $body-bg-color;
+  // дав сюди колір щоб відділити сторінку
+}
+
+.main-container {
+  background-color: #fff;
+  padding-bottom: 40px;
+  padding-top: 1px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 60px;
+    padding-top: 1px;
+  }
+}
+
+.main-content-list {
+  position: relative;
+  min-height: 80vh;
+  margin-top: 290px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    // margin-top: 60px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 280px;
+    margin-top: 20px;
+
+    .card-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      opacity: 0;
+      background: linear-gradient(#f00 4%, #f00 10%, #fff);
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+      @include transition(opacity, background-color);
+    }
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &:hover {
+      .card-container {
+        opacity: 0.2;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+      &:nth-child(2n) {
+        margin-left: 30px;
+      }
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+      max-width: 294px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 90px) / 4);
+      margin-left: 30px;
+      &:nth-child(4n + 1) {
+        margin-left: 0;
+      }
+      &:nth-child(3) {
+        margin-top: 0;
+      }
+      &:nth-child(4) {
+        margin-top: 0;
+      }
+      max-width: 274px;
+    }
+  }
+}
+
+//! кнопки для гортання сторінок
+
+.content-control-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 50px;
+  }
+}
+
+.content-control-button {
+  &-left,
+  &-right {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* .repo__technology_fork::before {
+    width: 11px;
+    height: 16px;
+    background: url(../img/fork.svg);
+}*/
+
+#pagDiv {
+  display: flex;
+  padding-top: 40px;
+  /* margin-bottom: 60px; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  #pagDiv {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #pagDiv {
+    padding-top: 46px;
+  }
+}
+.repos-pagination,
+.repos-pagination__link {
+  color: $mark-color;
+  transition: all 0.3s;
+}
+
+.repos-pagination__link:hover {
+  color: $footer-text-color;
+}
+
+.repos-pagination__link,
+.repos-pagination__dots {
+  padding-right: 0.8rem;
+}
+#inc {
+  cursor: pointer;
+}
+#dec {
+  cursor: pointer;
+}
+.right {
+  transform: rotate(180deg);
+  border-radius: 5px;
+}
+#arrow-left {
+  cursor: pointer;
+  border-radius: 5px;
+}
+.active-page {
+  display: block;
+  padding-top: 10px;
+  padding-left: 12px;
+  margin-right: 16px;
+
+  width: 40px;
+  height: 40px;
+  // background: url('../../images/icons/active-page.jpg');
+  border-radius: 5px;
+  color: white;
+}
+#first {
+  margin-left: 16px;
+}
+.btnRight {
+  width: 40px;
+  height: 40px;
+  // background-image: url(../../images/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  border: none;
+  margin-right: 16px;
+}

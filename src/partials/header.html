@@ -1,0 +1,53 @@
+<header class="header js-header">
+  <!-- header-library -->
+  <div class="container">
+    <div>
+      <nav class="nav">
+        <div class="nav-container">
+          <a class="link-filmoteka js-logo" href="">
+            <svg class="icon-film">
+              <use href="./images/sprite.svg#icon-film"></use>
+            </svg>
+            <p class="header-name-site">Filmoteka</p>
+          </a>
+        </div>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link current js-homeBtn" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link js-myLibraryBtn" href="#">my library</a></li>
+          </ul>
+        </div>
+      </nav>
+      <form class="header-form js-searchFormBlock">
+        <input class="header-input" type="text" placeholder="Search for movies"/>
+        <button type="submit" class="header-form-btn" title="Search">
+          <svg class="icon-search">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="nothing-search__container nothing-search__hidden">
+        <p class="nothing-search">Sorry, there no results found. Try searching for something else!</p>
+      </div>
+    </div>
+    <div class="js-container-btn header-hidden">
+      <ul class="header-buttons">
+        <li class="header-buttons-list">
+          <button class="header-btn watch" type="button" title="Open watched">Watched</button>
+        </li>
+        <li class="header-buttons-list">
+          <button class="header-btn current queue" type="button" title="Open queue">queue</button>
+        </li>
+        <!-- header-btn current -->
+      </ul>
+    </div>
+    
+    <button type="button" class="header-user js-user-button" title="User profile"><!-- js-reserved-name          -->
+      <svg class="header-user-cover icon-user">
+        <use href="./images/sprite.svg#icon-user"></use>
+      </svg>
+      <span class="js-name-user-login">Guest User</span>
+      <span class="js-signout-user hidden">Sign Out</span>
+    </button>
+  </div>
+</header>

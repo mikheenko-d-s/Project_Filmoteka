@@ -1,0 +1,84 @@
+.background-empty{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  transform: translateX(-50%);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $mobile;
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  };
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+
+width: 100vw;
+
+
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 30%);
+    &_text{
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 190%;
+        font-weight: bold;
+        text-align: center;
+        
+        color: #545454;
+        @media screen and (min-width: $tablet) {
+            padding-top: 35px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 26px;
+        };
+        @media screen and (min-width: $desktop) {
+      padding-top: 50px;
+      width: 600px;
+        font-size: 36px;
+        };
+       
+    }
+    &_img{
+        // object-fit: cover;
+        width: 100%; 
+    }
+}
+//empty-Library
+.main-content-list.empty-main{
+  min-height: 50px;
+  @media screen and (min-width: $tablet) {
+    min-height: 214px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-height: 483px;
+      };
+}
+
+.main-container.empty-main {
+  min-height: 0;
+ }
+
+ //empty-watch and queue
+
+ .main-content-list.empty-choice{
+
+  min-height: 128px;
+  @media screen and (min-width: $tablet) {
+    min-height: 378px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-height: 654px;
+      };
+}
+
+.main-container.empty-choice {
+  min-height: 0;
+ }
+
+ .background-empty.empty-choice {
+top: 220px;
+ }

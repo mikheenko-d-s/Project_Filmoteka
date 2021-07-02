@@ -1,0 +1,45 @@
+.card-img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-weight: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.card-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  color: $mark-color;
+}
+
+.card-info {
+  margin-top: 10px;
+  font-family: $main-font;
+  font-weight: $main-weight;
+  font-size: $main-size;
+  line-height: 1.17;
+}
+
+.vote-average {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 16px;
+
+  color: $header-text-color;
+  background-color: $mark-color;
+  border-radius: 5px;
+}
+
+.genres {
+  padding-right: 0.2rem;
+  border-right: 1px solid $mark-color;
+  margin-right: 0.2rem;
+}

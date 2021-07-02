@@ -1,0 +1,56 @@
+.pagination-my-style{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+
+      @media screen and (min-width: $tablet) {
+         margin-top: 50px;
+      }
+   }
+
+.arrowRight, 
+.arrowLeft,
+.current.pagNumber,
+.pagNumber,
+.pagDots{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height:  133%;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+.current.pagNumber,
+.pagNumber,
+.pagDots{
+    &:hover,
+    &:focus{
+        background: #ff6b086e;
+        color: #FFFFFF;
+    }
+}
+
+ .arrowRight, 
+ .arrowLeft{
+      background: #F7F7F7;
+      &:hover,
+      &:focus{
+        background: #5c5a5a50;
+        color: #FF6B08;
+ 
+      }
+ }
+
+.current.pagNumber{
+    background: #FF6B08;
+    color: #FFFFFF;
+}

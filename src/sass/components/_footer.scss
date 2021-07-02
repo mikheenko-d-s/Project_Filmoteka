@@ -1,0 +1,50 @@
+.footer-page {
+  color: $footer-text-color;
+  background: #f7f7f7;
+  font-family: $main-font;
+  font-size: $second-size;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.footer-icon {
+  margin: 0 10px;
+}
+
+.footer-page {
+padding: 29px 0;
+}
+
+.footer-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $mobile) {
+  .footer-start {
+    margin-bottom: 10px;
+  }
+
+  .footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .footer-page {
+    font-size: $footer-size;
+    line-height: 1.19;
+  }
+
+  .footer-start {
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

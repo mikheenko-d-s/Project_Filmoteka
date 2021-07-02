@@ -1,0 +1,282 @@
+.backdrop.backdrop-log-in {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url('../images/log-in.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2px 2px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+  }
+}
+
+.login-wrap {
+  z-index: 1;
+  position: relative;
+
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  font-family: $main-font;
+  font-weight: $main-weight;
+  font-size: $footer-size;
+  color: #ffffff;
+  background: inherit;
+
+  box-shadow: 0 0 1rem 0 rgba(72, 72, 72, 0.2);
+  text-shadow: rgb(0, 0, 0) 0 0 5px;
+
+  &:before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+
+    background: inherit;
+    box-shadow: inset 0 0 2000px rgb(117, 117, 117);
+    filter: blur(2px);
+  }
+}
+
+.login-html {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  padding: 60px 30px 50px;
+  border-radius: 50px;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    padding: 90px 70px 50px 70px;
+  }
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  position: absolute;
+
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+
+  transform: rotateY(180deg);
+  @include transition(all);
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+
+.login-html .tab,
+.login-form .label,
+.group .button-log-in {
+  text-transform: uppercase;
+}
+
+.login-html .tab {
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  border-bottom: 2px solid transparent;
+
+  font-size: $footer-size;
+}
+
+.sign-in:checked + .tab,
+.sign-up:checked + .tab {
+  color: $header-text-color;
+  text-shadow: rgb(0, 0, 0) 0 0 5px;
+  border-color: $mark-color;
+}
+
+.login-form {
+  position: relative;
+
+  min-height: 345px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.login-form .group {
+  margin-bottom: 15px;
+}
+
+.login-form .label,
+.login-form .input,
+.login-form .button-log-in {
+  display: block;
+  outline: none;
+  width: 100%;
+
+  background-color: transparent;
+  text-shadow: rgb(0, 0, 0) 0 0 2px;
+}
+
+.login-form .input,
+.login-form .button-log-in {
+  max-width: 350px;
+  padding: 15px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  color: $header-text-color;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.9);
+}
+
+.login-form .label {
+  color: $header-text-color;
+  font-size: 12px;
+}
+
+.login-form .button-log-in {
+  border-radius: 10px;
+  box-shadow: none;
+  background: $mark-color;
+  text-shadow: rgb(0, 0, 0) 0 0 2px;
+}
+
+.button-log-in {
+  cursor: pointer;
+}
+
+.login-form .icon {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+
+  background: $header-text-color;
+}
+
+.login-form .icon:before,
+.login-form .icon:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 2px;
+
+  background: $header-text-color;
+  @include transition(all);
+}
+
+.login-form .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+
+.login-form .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+
+.login-form.check:checked + label {
+  color: $header-text-color;
+  text-shadow: rgb(0, 0, 0) 0 0 5px;
+}
+
+.login-form .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 5px 0;
+  background: radial-gradient($mark-color, #ff001b);
+
+  @media screen and (min-width: $tablet) {
+    margin: 30px 0 30px 0;
+  }
+}
+
+.foot-lnk {
+  text-align: center;
+}
+
+.regist,
+.tab {
+  cursor: pointer;
+}
+
+.group.in-form .input {
+  color: $header-text-color;
+  outline: none;
+}
+
+.in-form .input-password,
+.group.mail-address {
+  margin-bottom: 30px;
+}
+
+.close-login-wrap {
+  position: absolute;
+
+  @extend %flex-center;
+  top: 20px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid $body-bg-color;
+  border-radius: 50%;
+
+  background: transparent;
+
+  &:hover .icon-close-login-wrap,
+  &:focus .icon-close-login-wrap {
+    transform: scale(1.2);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-close-login-wrap {
+  width: 100%;
+  height: 100%;
+  @include transition(transform);
+}
+
+.form-signing {
+  width: 100%;
+  height: 100%;
+}
+
+.login-wrap .login-form .input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}

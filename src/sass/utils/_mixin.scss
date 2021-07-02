@@ -1,0 +1,11 @@
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: $time-duration;
+  transition-timing-function: $cubic;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
